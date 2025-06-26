@@ -1,0 +1,68 @@
+@import "../../../../styles/mixins";
+
+.videoCard {
+    max-width: 250px;
+    cursor: pointer;
+    @include xl-screen {
+        max-width: 367px;
+    }
+    @include sm-screen {
+        max-width: 100%;
+        width: 100%;
+    }
+    h4 {
+        max-width: 367px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        @include sm-screen {
+            max-width: 100%;
+            padding-top: 8px;
+            padding-bottom: 4px;
+        }
+    }
+    .description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+.mainVideoCard {
+    width: 100%;
+    h1 {
+        padding-top: 20px;
+        padding-bottom: 13px;
+        @include md-screen {
+            padding-top: 13px;
+            padding-bottom: 4px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .description {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        @include md-screen {
+            padding: 0 15px;
+        }
+        @include sm-screen {
+            flex-direction: column;
+        }
+        .btnsWrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button {
+                gap: 8px;
+                &:last-child {
+                    margin-left: 30px;
+                    @include sm-screen {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

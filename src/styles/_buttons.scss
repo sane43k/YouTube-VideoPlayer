@@ -1,0 +1,75 @@
+button {
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  @include md-screen {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+button:hover {
+  opacity: 0.7;
+}
+button:active {
+  opacity: 1;
+}
+
+.btn-red {
+  color: var(--white);
+  background-color: var(--red);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include md-screen {
+    padding: 10px 17px;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-grey {
+  font-size: 16px;
+  background-color: var(--search-bg);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include md-screen {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+}
+
+.scroll-btns-wrapper {
+  height: 28px;
+  width: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.scroll-btns-wrapper button {
+  height: 28px;
+  width: 28px;
+  background-color: var(--transparent-black);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Mulish, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: var(--black);
+  background-color: var(--white);
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-grey) transparent;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  padding-top: 84px;
+  padding-left: 223px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  gap: 70px;
+  @include md-screen {
+    gap: 50px;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-bottom: 63px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+.h1-36pt {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  @include md-screen {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+h2,
+.h2-26pt {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  @include md-screen {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+h3,
+.h3-18pt {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: var(--black);
+}
+
+h4,
+.h4-16pt {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.text-13pt {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--light-grey);
+}
+
+.text-14pt {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.text-16pt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--light-grey);
+  @include md-screen {
+    font-size: 14px;
+  }
+}
+
+.text-20pt {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--light-grey);
+  @include md-screen {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--grey);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  @include md-screen {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+a:hover {
+  opacity: 0.7;
+}
+a:active {
+  opacity: 1;
+}

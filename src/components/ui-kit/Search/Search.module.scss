@@ -1,0 +1,29 @@
+.searchWrapper {
+    height: 44px;
+    width: 100%;
+    background-color: var(--search-bg);
+    border-radius: 22px;
+    padding: 13px 18px 13px 23px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &:focus-within {
+        caret-color: var(--black);
+        border: 1px solid var(--black);
+    }
+    input {
+        font-family: Mulish, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--black);
+        height: 100%;
+        width: 100%;
+        background-color: var(--search-bg);
+        border: none;
+        outline: none;
+        padding: 0;
+        &::placeholder {
+            color: var(--grey);
+        }
+    }
+}

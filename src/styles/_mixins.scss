@@ -1,0 +1,25 @@
+@mixin font-face($weight-name, $font-weight) {
+    @font-face {
+        font-family: Mulish;
+        src: url(../assets/fonts/Mulish-#{$weight-name}.ttf);
+        font-weight: $font-weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@mixin xl-screen {
+    @media (min-width: 1920px) {
+        @content;
+    }
+}
+@mixin md-screen {
+    @media (max-width: 960px) {
+        @content;
+    }
+}
+@mixin sm-screen {
+    @media (max-width: 576px) {
+        @content;
+    }
+}

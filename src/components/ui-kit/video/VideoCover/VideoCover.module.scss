@@ -1,0 +1,46 @@
+@import "../../../../styles/mixins";
+
+.videoCover {
+    height: 150px;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    @include xl-screen {
+        height: 215px;
+    }
+    @include sm-screen {
+        height: 200px;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .duration {
+        background: var(--transparent-black);
+        border-radius: 12px;
+        padding: 3px 9px;
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+.mainVideoCover {
+    max-height: 700px;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    @include md-screen {
+        border-radius: 0;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

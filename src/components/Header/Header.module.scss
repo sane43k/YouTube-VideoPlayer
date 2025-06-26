@@ -1,0 +1,73 @@
+@import "../../styles/mixins";
+
+.headerSection {
+    height: 84px;
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px 70px 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 59px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    @include md-screen {
+        height: 50px;
+        padding: 10px 16px;
+        gap: 30px;
+    }
+    .btnsSearchWrapper {
+        width: 1053px;
+        display: flex;
+        align-items: center;
+        gap: 59px;
+        .btnsWrapper {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            @include md-screen {
+                .btnBurger {
+                    display: none;
+                }
+            }
+        }
+        @include md-screen {
+            .search {
+                display: none;
+            }
+        }
+    }
+    .iconsWrapper {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        @include md-screen {
+            gap: 24px;
+        }
+        .headerLink {
+            &:nth-child(3) {
+                position: relative;
+            }
+            &:last-child {
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            @include md-screen {
+                &:nth-child(-n + 3) {
+                    display: none;
+                }
+                &:nth-child(5) img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+        button {
+            display: none;
+            @include md-screen {
+                display: flex;
+            }
+        }
+    }
+}
