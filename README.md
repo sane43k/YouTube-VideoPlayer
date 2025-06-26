@@ -4,9 +4,15 @@ Layout of YouTube Video Player page (React)
 
 https://www.figma.com/design/JfnTCl9Ql46jC6PdY9k9YP/YouTube-Redesign-Concept?node-id=0-1&p=f&t=CeqRS4AGLyLsHelV-0
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Install dependencies
+
+```
+npm install
+```
 
 ## Available Scripts
 

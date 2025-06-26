@@ -160,7 +160,7 @@ const Aside = () => {
                     href="#"
                     src={iconsAside.settings}
                     alt="settings"
-                    text="settings"
+                    text="Setting"
                 ></IconTextLink>
             </nav>
         </aside>
